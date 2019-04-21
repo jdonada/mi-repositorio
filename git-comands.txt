@@ -1,0 +1,4 @@
+git init   - executat dins de la carpeta la inicialitza per utilizarla com a repositori arrel
+git status - et diu si algun dels arxius de la carpeta no està inclòs dins el repositori
+git add    - prepara els arxius per afegirlos dins el repositori
+git commit -m "primer canvi" - afegeix els arxius al repositori amb un comentari
