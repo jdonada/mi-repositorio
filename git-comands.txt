@@ -1,4 +1,17 @@
-git init   - executat dins de la carpeta la inicialitza per utilizarla com a repositori arrel
-git status - et diu si algun dels arxius de la carpeta no està inclòs dins el repositori
-git add    - prepara els arxius per afegir/borrar dins el repositori
+git init         - executat dins de la carpeta la inicialitza per utilizarla com a repositori arrel
+git clone <link> - will copy all the files from that Git repository to your local one. 
+git status       - et diu si algun dels arxius de la carpeta no està inclòs dins el repositori
+git add .        - prepara els arxius per afegir/borrar dins el repositori movent-los dins la Staging Area (*).
 git commit -m "primer canvi" - afegeix els arxius al repositori amb un comentari
+git remote add origin https://github.com/jdonada/mi-repositorio.git - li diu quin repositori de GITHUB fer servir
+git push -u origin master - mou del repo local al de github
+
+--branques--
+git branch <branch>     - Crea una branca
+git checkout <branch>   - Apuntar a la branca
+git checkout -b <branch>- Les dues comandes anteriors en una
+git merge <branch>      - Merge your branch to the master branch
+
+git pull origin <branch> - baixar-te els últims canvis al teu repo local
+
+(*) staging area (se puede traducir como área de pruebas o área de ensayo)
