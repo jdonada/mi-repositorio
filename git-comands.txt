@@ -5,6 +5,7 @@ git add .        - prepara els arxius per afegir/borrar dins el repositori moven
 git commit -m "primer canvi" - afegeix els arxius al repositori amb un comentari
 git remote add origin https://github.com/jdonada/mi-repositorio.git - li diu quin repositori de GITHUB fer servir
 git push -u origin master - mou del repo local al de github
+git diff <archivo> - mostra les diferencies
 
 --branques--
 git branch <branch>     - Crea una branca
