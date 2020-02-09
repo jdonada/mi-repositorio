@@ -8,11 +8,12 @@ git push -u origin master - mou del repo local al de github
 git diff <archivo> - mostra les diferencies
 
 --branques--
-git branch <branch>     - Crea una branca
-git checkout <branch>   - Apuntar a la branca
-git checkout -b <branch>- Les dues comandes anteriors en una
-git merge <branch>      - Merge your branch to the master branch
+git branch                  - Et diu quines branques hi ha
+git branch <nom_branch>     - Crea una branca
+git checkout <nom_branch>   - Apuntar a la branca
+git checkout -b <nom_branch>- Les dues comandes anteriors en una
+git merge <nom_branch>      - Merge your branch to the master branch
 
-git pull origin <branch> - baixar-te els últims canvis al teu repo local
+git pull origin <nom_branch> - baixar-te els últims canvis al teu repo local
 
 (*) staging area (se puede traducir como área de pruebas o área de ensayo)
