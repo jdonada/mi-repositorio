@@ -1,19 +1,38 @@
 git init         - executat dins de la carpeta la inicialitza per utilizarla com a repositori arrel
 git clone <link> - will copy all the files from that Git repository to your local one. 
-git status       - et diu si algun dels arxius de la carpeta no està inclòs dins el repositori
+git status       - et diu si algun dels arxius de la carpeta no estÃ  inclÃ²s dins el repositori
 git add .        - prepara els arxius per afegir/borrar dins el repositori movent-los dins la Staging Area (*).
 git commit -m "primer canvi" - afegeix els arxius al repositori amb un comentari
+git commit -a (= -all) - Fa commit sense passar per la Staging Area
 git remote add origin https://github.com/jdonada/mi-repositorio.git - li diu quin repositori de GITHUB fer servir
 git push -u origin master - mou del repo local al de github
-git diff <archivo> - mostra les diferencies
+git push -uf origin main
+
+git diff <archivo> - mostra les diferencies entre working i Staging 
+git diff --staged  - mostra les diferencies entre Staging i repositori
+
+git log                                  - mostra el log de comentaris amb els canvis
+git log --online --decorate --all -graph - mostra el log amb tota la info
+git log --grep="Init" - busca expression regulars amb la paraula "Init" en els comentaris
+
+git show <SHA-clau> (opcional --colors-words)  - Mostra el canvis q es van pujar en el commit indicat
+git rm <archivo>      - borra el fitxer fÃ­sic i puja el canvi a la staging area
+git mv <archivo> <archivo> - Renombra (o mou de directori) fitxer i puja el canvi a la staging area
+git checkout <archivo>     - Descarta els canvis del teu working area
+git reset HEAD <archivo>   - Descarta el canvis del Staging Area
+git revert <SHA-clau>      - Reverteix els canvis del commit indicat
 
 --branques--
-git branch                  - Et diu quines branques hi ha
-git branch <nom_branch>     - Crea una branca
-git checkout <nom_branch>   - Apuntar a la branca
-git checkout -b <nom_branch>- Les dues comandes anteriors en una
-git merge <nom_branch>      - Merge your branch to the master branch
+git branch                   - Et diu quines branques hi ha
+git branch   <nom_branch>    - Crea una branca
+git checkout <nom_branch>    - Apuntar a la branca
+git checkout -b <nom_branch> - Les dues comandes anteriors en una
+git checkout <branca o commit>^      - Apunta al pare del commit
+git checkout <branca o commit>~n     - Apunta n commits enrera
+git branch -f master HEAD~3  - Mou master 3 commits enrera de HEAD
 
-git pull origin <nom_branch> - baixar-te els últims canvis al teu repo local
+git merge    <nom_branch>   - Merge your branch to the master branch
 
-(*) staging area (se puede traducir como área de pruebas o área de ensayo)
+git pull origin <nom_branch> - baixar-te els Ãºltims canvis al teu repo local
+
+(*) staging area (se puede traducir como Ã¡rea de pruebas o Ã¡rea de ensayo)
